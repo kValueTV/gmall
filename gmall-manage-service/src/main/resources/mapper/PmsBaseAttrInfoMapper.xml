@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kvalue.gmall.manage.mapper.PmsBaseAttrInfoMapper">
+    <insert id="insertPmsBaseAttrInfo"  parameterType="com.kvalue.gmall.bean.PmsBaseAttrInfo" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        INSERT INTO pms_base_attr_info ( attr_name, catalog3_id, is_enabled) VALUES ( #{attrName}, #{catalog3Id}, NULL)
+    </insert>
+</mapper>
